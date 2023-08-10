@@ -51,7 +51,7 @@ namespace EJ2APIServices.Controllers
                 case "move":
                     // cuts the selected file(s) or folder(s) from a path and then pastes them into a given target path.
                     if(true)
-                        return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
+                        return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData)) ;
                     else
                         return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
                 case "details":
