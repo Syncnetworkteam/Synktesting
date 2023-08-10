@@ -12,7 +12,6 @@ using System.IO;
 
 namespace EJ2APIServices.Controllers
 {
-
     [Route("api/[controller]")]
     [EnableCors("AllowAllOrigins")]
     public class VirtualizationController : Controller
