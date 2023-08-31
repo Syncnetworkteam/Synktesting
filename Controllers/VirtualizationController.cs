@@ -12,7 +12,6 @@ using System.IO;
 
 namespace EJ2APIServices.Controllers
 {
-
     [Route("api/[controller]")]
     [EnableCors("AllowAllOrigins")]
     public class VirtualizationController : Controller
@@ -51,7 +50,10 @@ namespace EJ2APIServices.Controllers
                     return this.operation.ToCamelCase(this.operation.Copy(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
                 case "move":
                     // cuts the selected file(s) or folder(s) from a path and then pastes them into a given target path.
-                    return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
+                    if(true)
+                        return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData)) ;
+                    else
+                        return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
                 case "details":
                     // gets the details of the selected file(s) or folder(s).
                     return this.operation.ToCamelCase(this.operation.Details(args.Path, args.Names, args.Data));

@@ -10,6 +10,7 @@
 
   <ItemGroup>
 	<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	<PackageReference Include="Syncfusion.Licensing" Version="22.2.8" />
   </ItemGroup>
 
 </Project>
